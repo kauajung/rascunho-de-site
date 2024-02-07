@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Meu site</title>
+</head>
+<body>
+<div class="menu cima">
+<img src=""style="width: 5%;float: left;">
+<ul id="nav">
+     <li><a href="#" class="active">Inicio </a>
+     <ul>
+         <li><a href="#">Menu 1</a></li>
+         <li><a href="#">Menu 1</a></li>
+     </ul>
+     </li>
+     </ul>
+     <ul id="nav">
+     <li><a href="#"> Sobre </a>
+     <ul>
+         <li><a href="#">Menu 2</a></li>
+         <li><a href="#">Menu 2</a></li>
+     </ul>    
+     </li>
+     </ul>
+     <ul id="nav">
+     <li><a href="#"> Populares </a>
+     <ul>
+         <li><a href="#">Menu 3</a></li>
+         <li><a href="#">Menu 3</a></li>
+     </ul>
+     </li>
+     </ul>
+     <ul id="nav">
+     <li><a href="#"> Configuração do Site </a>
+     <ul>
+         <li><a href="#">Menu 4</a></li>
+         <li><a href="#">Menu 4</a></li>
+     </ul>
+     </li>
+ </ul>
+<div id="divBusca">
+<form action="/Buscar" method="get">
+     <input type="text" id="txtBusca"  onkeyup="search_carro()" placeholder="Buscar..."/>
+</form>
+</div>
+ <style>
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            width: 150px;
+       }
+       ul li{
+            position: relative;
+       }
+       li ul{
+            left: 80px;
+            top: 0;
+            display: none;
+       }
+       ul li a{
+            display: block;
+            text-decoration: none;
+            color: #E2144A;
+            padding: 5px;
+            border: 1px solid #ccc;
+       }
+       * html ul li { float: left; }
+       * html ul li a { height: 1%; }
+       li:hover ul { display: block; }
+       #divBusca{
+            background-color:#2F4F4F;
+            border:solid 1px;
+            border-radius:15px;
+            width:200px;
+            float:right;
+       }
+
+       #txtBusca{
+             float:left;
+             background-color:transparent;
+             padding-left:5px;
+             font-style:italic;
+             font-size:18px;
+             border:none;
+             height:32px;
+             width:200px;
+        }
+
+       .menu {
+             background-color: #333;
+             overflow: hidden;
+             padding: 10px;              
+        }
+       .menu a{
+             float: left;
+             color: white;
+             text-align: center;
+             padding: 10px 20px;
+             text-decoration: none;
+       }
+       .menu a:hover{
+             background-color: #ddd;
+             color: black;
+       }
+       .active{
+              background-color: #4CAF50;
+              color: white;
+        }
+</style>
+</div>
+<style>
+       #cabeçalho{
+             display: flex;
+             background-color: #333;
+             align-iten: center;
+             margin: 1px;
+        }
+       #cabeçalho ul{
+             list-style: nome;
+        }
+       #cabeçalho a{
+             color: white;
+             text-decoration: nome;
+        }
+       #cabeçalho li{
+             display: inline-black;
+             margin: 1px;
+        }
+       footer ul centro{
+             display: flex;
+             list-style: nome;
+        }
+       footer h2{
+             background-color: #333;
+             color: #ddd;
+         }
+       h1{
+             text-align: center;
+             color: white;
+             background-color: #0000FF;
+       }
+       h2{
+             color: black;
+             background-color: #f0f0f0;
+       }
+       li{
+             color: white;
+             list-style-type: none;
+      }
+       p{
+             color: white;
+     }
+       body{
+             background-color: black;
+       }
+        main {
+              padding: 20px;
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: space-between;
+}
+
+  .carro {
+             background-color:;
+             margin-bottom: 20px;
+             padding: 2px;
+             width: 49%;
+             position: relative;
+             text-align: left;
+             color: white;
+}
+
+.carro img {
+             display: block;
+             margin: 0 auto;
+             max-width: 100%;
+}
+figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  font-size:40px;
+}
+
+</style>
+
+ <div id="novadiv">
+</div>
+<section>
+<h1 style="background-color:#A8A8A8;text-align: center;"><i>Carros a Venda</i></h1>
+</section>
+<main style="padding: 20px;display: flex;flex-wrap: wrap;justify-content: space-between;">
+<section class="carro">
+<a href="#">
+<img src="https://live.staticflickr.com/7305/13993653592_aea815b08a_b.jpg"     alt="Koenigsseg one 1">
+ <figcaption><b>Koenigsseg one 1</b></figcaption>
+ </a>
+</section>
+<section class="carro">
+<a href="#">
+<img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/033fc9118246349.6085a817c2a3d.png" alt="Mitsubishi eclipse">
+<figcaption><b>Mitsubishi eclipse</b></figcaption>
+</a>
+</section>
+<section class="carro">
+<a href="#">
+<img src="https://files.hodoor.world/images/products/images-products-1-2975-372001695-lbnation_86_40.jpeg" alt="Toyota GT86">
+<figcaption><b>Toyota GT86</b></figcaption>
+</a>
+</section>
+<section class="carro">
+<a href="#">
+<img src="https://cdn.motor1.com/images/mgl/9mmp01/s3/bugatti-bolide-at-concorso-d-eleganza-at-villa-d-este.jpg" alt="Bugatti Bolide">
+<figcaption><b>Bugatti Bolide</b></figcaption>
+</a>
+</section>
+<section class="carro">
+<a href="#">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/McLaren_P1.jpg/1200px-McLaren_P1.jpg" alt="MCLaren P1">
+<figcaption><b>MCLaren P1</b></figcaption>
+</a>
+</section>
+<section class="carro">
+<a href="#">
+<img src="https://www.tuningblog.eu/wp-content/uploads/2017/01/Nissan-R34GT-R-ER34-Kuhl-Racing-Bodykit-Tuning-1-2.jpg" alt="Nissan skyline R34">
+<figcaption><b>Nissan skyline R34</b></figcaption>
+</a>
+</section>
+<section class="carro">
+<a href="#">
+<img src="https://www.marinoperformancemotors.com/imagetag/14288/5/l/Used-2021-Aston-Martin-DB11-V8.jpg" alt="Aston Martin DB11">
+<figcaption><b>Aston Martin DB11</b></figcaption>
+</a>
+</section>
+<section class="carro">
+<a href="#">
+<img src="https://quatrorodas.abril.com.br/wp-content/uploads/2016/11/56e712fd0e21630a3e172aeelamborghini-veneno.jpeg?quality=70&strip=info&w=1024&resize=1200,800.png" alt="Lamborghini Veneno">
+<figcaption><b>Lamborghini Veneno</b></figcaption>
+</a>
+</section>
+<section class="carro">
+<a href="#">
+<img src="https://i.redd.it/htyiypls6pt51.jpg" alt="Mazda RX-7">
+<figcaption><b>Mazda RX-7</b></figcaption>
+</a>
+</section>
+<section class="carro">
+<a href="#">
+<img src="https://dmc.ag/wp-content/uploads/2019/07/DMC_SuperTrofeo-scaled.jpg" alt="Lamborghini Gallardo">
+<figcaption><b>Lamborghini Gallardo</b></figcaption>
+</a>
+</section>
+<section class="carro">
+<a href="#">
+<img src="https://www.tuningblog.eu/wp-content/uploads/2017/07/Vorsteiner-VRS-Bodykit-V-FF-105-Alu-Audi-R8-V10-Tuning-1.jpg" alt="Audi R8">
+<figcaption><b>Audi R8</b></figcaption>
+</a>
+</section>
+<section class="carro">
+<a href="#">
+<img src="https://cdn.shopify.com/s/files/1/0534/4975/2729/products/1_1f42d110-f3f2-49e0-8010-52c25d79491f.jpg?v=1674730309&width=533.jpg" alt="Lamborghini Huracan">
+<figcaption><b>Lamborghini Huracan</b></figcaption>
+</a>
+</section>
+<section class="carro">
+<a href="#">
+<img src="https://www.tuningblog.eu/wp-content/uploads/2022/01/MBYTE-Maserati-GT-Widebody-Tuning-3.jpg" alt="Masserati Granturismo">
+<figcaption><b>Masserati Granturismo</b></figcaption>
+</a>
+</section>
+<section class="carro">
+<a href="#">
+<img src="https://i.ytimg.com/vi/Cd9H7v7PPb4/maxresdefault.jpg" alt="Mustang GT">
+<figcaption><b>Mustang GT</b></figcaption>
+</a>
+</section>
+<section class="carro">
+<a href="#">
+<img src="https://smartcdn.gprod.postmedia.digital/driving/wp-content/uploads/2022/10/LOT_0806_Fittipaldi_Evija-scaled.jpg" alt="Lotus Evija">
+<figcaption><b>Lotus Evija</b></figcaption>
+</a>
+</section>
+<section class="carro">
+<a href="#">
+<img src="https://images.caradisiac.com/images/6/3/9/3/196393/S1-amg-one-la-f1-de-route-en-approche-tres-rapide-716193.jpg" alt="Mercedes amg one">
+<figcaption><b>Mercedes amg one</b></figcaption>
+</a>
+</section>
+<section class="carro">
+<a href="#">
+<img src="https://hips.hearstapps.com/hmg-prod/images/dodge-challenger-nap-exclusive-1-1593701924.jpg" alt="Dodge chalenger">
+<figcaption><b>Dodge chalenger</b></figcaption>
+</a>
+</section>
+<section class="carro">
+<a href="#">
+<img src="https://www.lotustalk.com/attachments/sportexige-jpg.14284/.png" alt="Lotus Elise">
+<figcaption><b>Lotus Elise</b></figcaption>
+</a>
+</section>
+<section class="carro">
+<a href="#">
+<img src="https://cdn.shopify.com/s/files/1/0075/8405/5393/products/ws_0cc46940-b8e3-4906-b762-7eb3f4650d16_1000x1000.jpg?v=1605769213.png" alt="Corvette C7">
+<figcaption><b>Corvette C7</b></figcaption>
+</a>
+</section>
+<section class="carro">
+<a href="#">
+<img src="https://cdn.shopify.com/s/files/1/0649/4581/5809/products/Screenshot_1_1a29d1d3-2e99-4b0f-a7b2-268a0739c81f.jpg?v=1657694554" alt="Pagani Huayra">
+<figcaption><b>Pagani Huayra</b></figcaption>
+</a>
+</section>
+<section class="carro">
+<a href="#">
+<img src="https://www.voiture-sportive.fr/wp-content/uploads/2022/06/Toyota-supra-mk4-noire.png" alt="Toyota Supra">
+<figcaption><b>Toyota Supra</b></figcaption>
+</a>
+</section>
+<section class="carro">
+<a href="#">
+<img src="https://cdn.motor1.com/images/mgl/AkKbbP/s3/hennessey-venom-f5-revolution.webp" alt="Henessey Venom F5">
+<figcaption><b>Henessey Venom F5</b></figcaption>
+</a>
+</section>
+<section class="carro">
+<a href="#">
+<img src="https://i.redd.it/huk1w25c9zt61.jpg" alt="Honda NSX">
+<figcaption><b>Honda NSX</b></figcaption>
+</a>
+</section>
+<section class="carro">
+<a href="#">
+<img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/img-3743-1508866403.jpg?crop=1.00xw:1.00xh;0,0&resize=1200:*" alt="Apollo IE">
+<figcaption><b>Apollo IE</b></figcaption>
+</a>
+</section>
+<section class="carro">
+<a href="#">
+<img src="https://www.tuningblog.eu/wp-content/uploads/2023/04/Ferrari-458-Challenge-Silhouette-Works-Bodykit-Liberty-Walk-Tuning-3.jpg" alt="Ferrari 458">
+<figcaption><b>Ferrari 458</b></figcaption>
+</a>
+</section>
+<section class="carro">
+<a href="#">
+<img src="https://www.webmotors.com.br/wp-content/uploads/2018/12/06123403/7c74bf1e-koenigsegg-regera-knc-7.jpg" alt="Koenigsseg Regera">
+<figcaption><b>Koenigsseg Regera</b></figcaption>
+</a>
+</section>
+<section class="carro">
+<a href="#">
+<img src="https://libertywalk.shop/wp-content/uploads/2019/11/lamborghini_aventador_limited_edition_driver_front.jpeg" alt="Lamborghini Aventador">
+<figcaption><b>Lamborghini Aventador</b></figcaption>
+</a>
+</section>
+<section class="carro">
+<a href="#">
+<img src="https://cdn.motor1.com/images/mgl/ow800/s1/ssc-tuatara-averages-282.9-mph-at-the-johnny-bohmer-proving-grounds.webp" alt="SSC Tuatara">
+<figcaption><b>SSC Tuatara</b></figcaption>
+</a>
+</section>
+</main>
+<section>
+<div style="overflow: hidden;background-color: black;" class="menu cima">
+     <a href="#" class="active">1 </a>
+     <a href="#"> 2 </a>
+     <a href="#"> 3 </a>
+     <a href="#"> 4 </a>
+     <a href="#"> 5 </a>
+     <a href="#"> 6 </a>
+     <a href="#"> 7 </a>
+     <a href="#"> > </a>
+<div id="divBusca">
+     </section>
+</div>
+<section>
+   <h2><i>Sobre nós</i><br></h2>
+   <p> ... </p>
+</section>
+     <h2 style="text-align: ;"><i>Fale Conosco ou Entre em Contato </i></h2>
+<footer>  <!-- Rodapé -->
+<ul class="esquerda">  <!-- Lista a esquerda -->
+         <h2>HORARIO ATENDIMENTO</h2><br>
+         <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD-FvJgkhdVvxjCDLzkt7-7mJHUMTeNQIHdw&usqp=CAU"style="width: 20%;float: left;">Segunda a Sexta das 7:00 as 22:30</li><br>
+         <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD-FvJgkhdVvxjCDLzkt7-7mJHUMTeNQIHdw&usqp=CAU"style="width: 20%;float: left;">Sábado das 7:30 as 12:00 </li><br>
+</ul>
+<ul class="centro">  <!-- Lista central -->
+         <h2>CONTATO</h2>
+         <li><img src="https://images.vexels.com/media/users/3/157620/isolated/lists/28323eba1d9f71acc3cc92f0e043fc5c-icone-de-telefone-preto-e-branco.png"style="width: 14%;float: left;">(41) 99999-9999</li><br>
+         <li><img src="https://cdn.icon-icons.com/icons2/2699/PNG/512/whatsapp_logo_icon_170905.png"style="width: 13%;float: left;">(52) 92929-9292</li><br>
+         <li><img src="https://img.freepik.com/icones-gratis/procurar_318-265146.jpg"style="width: 13%;float: left;"> contato@veiculos.com.br</li><br>
+         <li><img src="https://cdn-icons-png.flaticon.com/512/2775/2775994.png"style="width: 14%;float: left;">Av. Veiculos, 123</li><br>
+         <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4LOTiL1-CJyBAwUMJhB738XF8iN8LQ5r5IMGg-BTWMdcM7WrXWcSdLLummzBFAYyHiIo&usqp=CAU"style="width: 15%;float:left ;">@veiculos</li>
+         
+</ul>
+</ul>
+</footer>
+<footer>
+        <p style="text-decoration: underline;">&copy; 2023 Meu site. Todos os direitos reservados</p>
+</footer>
+</body>
+</html>
